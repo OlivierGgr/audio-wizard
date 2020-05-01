@@ -2,5 +2,30 @@
   height: 89px;
   background: -webkit-gradient(linear, left top, right top, from(#18BC9D), to(#18ABBB)) !important;
   background: linear-gradient(to right, #18BC9D, #18ABBB) !important;
+  padding: 0 4% !important;
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
+}
+
+.topNavBar .userNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #199AA6;
+  padding: 2%;
+  background: #199AA6;
+  border-radius: 500px;
+  width: 100%;
+}
+
+.topNavBar .userNav h2 {
+  font-size: 1rem;
+  margin: 0;
+  color: white;
+  width: 100%;
 }
 /*# sourceMappingURL=TopNav.css.map */

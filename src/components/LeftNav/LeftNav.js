@@ -1,6 +1,6 @@
 import React from 'react'
 import Nav from 'react-bootstrap/Nav'
-import StandardLinksFactory from './DynamicLinks/StandardLinks'
+import DynamicLinks from './DynamicLinks'
 import './LeftNav.css'
 
 // Ici je pars du principe que le composant qui contient les deux links en bas de page
@@ -25,7 +25,7 @@ export default function LeftNav() {
         <div className="leftNavMain">
             <Nav defaultActiveKey="/home" className="flex-column sidebar">
                 <div className="sidebarTop">
-                    {StandardLinksFactory()}
+                    {DynamicLinks()}
                 </div>
                 <div className="sidebarBottom">
                     {staticLinks()}

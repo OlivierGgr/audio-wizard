@@ -19,7 +19,7 @@ const links = [{
     }
 ]
 
-export default function StandardLinksFactory() {
+export default function DynamicLinks() {
     return links.map(link => <Nav.Link href={link.route}>{link.text}</Nav.Link>
     )
 }

@@ -1,5 +1,112 @@
 .main {
   background-color: #F6F6F9;
   height: calc(100vh - 89px);
+  margin-left: 12vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  height: 80%;
+}
+
+.container .card {
+  height: 80%;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.container .card .card-header {
+  background-color: white;
+  color: #18BC9C;
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+
+.container .card .card-body {
+  height: 50%;
+  position: relative;
+  margin: 0 auto;
+  width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.container .card .card-body .formAnswer {
+  /* TESTS */
+  position: relative;
+  margin: 0 auto;
+  width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  /* FIN TESTS */
+}
+
+.container .card .card-body .formAnswer .text {
+  width: 40%;
+  border: 0;
+  border-bottom: 2px solid #18BC9C;
+  outline: 0;
+  font-size: 1.3rem;
+  color: grey;
+  padding: 7px 0;
+  -webkit-transition: border-color 0.2s;
+  transition: border-color 0.2s;
+}
+
+.container .card .card-body .formAnswer .text:focus {
+  padding-bottom: 6px;
+  border-width: 3px;
+  -o-border-image: linear-gradient(to right, #18BC9D, #18ABBB);
+     border-image: -webkit-gradient(linear, left top, right top, from(#18BC9D), to(#18ABBB));
+     border-image: linear-gradient(to right, #18BC9D, #18ABBB);
+  border-image-slice: 1;
+}
+
+.container .card .card-body .formAnswer .button {
+  background-color: #D1F2EB;
+  border: 1px solid #F6F6F9;
+  border-radius: 500px;
+  width: 144px;
+  height: 72px;
+  color: #1ABEAD;
+  font-weight: 600;
+}
+
+.container .card .card-body .formAnswer .button:focus {
+  background-color: #18BC9C;
+  border: 1px solid #F6F6F9;
+  color: #D1F2EB;
+}
+
+.container .card .card-body button {
+  background-color: #18BC9C;
+  border: 1px solid #199AA6;
+  border-radius: 500px;
+  width: 144px;
+  height: 72px;
+}
+
+.container .card .card-body button:hover {
+  background-color: #128f76;
 }
 /*# sourceMappingURL=Main.css.map */
