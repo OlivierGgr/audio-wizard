@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/audio-wizard/static/css/main.690644ae.chunk.css",
+    "main.js": "/audio-wizard/static/js/main.2eb8c118.chunk.js",
+    "main.js.map": "/audio-wizard/static/js/main.2eb8c118.chunk.js.map",
+    "runtime-main.js": "/audio-wizard/static/js/runtime-main.ca7304cf.js",
+    "runtime-main.js.map": "/audio-wizard/static/js/runtime-main.ca7304cf.js.map",
+    "static/css/2.69121389.chunk.css": "/audio-wizard/static/css/2.69121389.chunk.css",
+    "static/js/2.fac7a56f.chunk.js": "/audio-wizard/static/js/2.fac7a56f.chunk.js",
+    "static/js/2.fac7a56f.chunk.js.map": "/audio-wizard/static/js/2.fac7a56f.chunk.js.map",
+    "index.html": "/audio-wizard/index.html",
+    "precache-manifest.afc09e2cdd4fa99e22ae8c8c18ffeaa0.js": "/audio-wizard/precache-manifest.afc09e2cdd4fa99e22ae8c8c18ffeaa0.js",
+    "service-worker.js": "/audio-wizard/service-worker.js",
+    "static/css/2.69121389.chunk.css.map": "/audio-wizard/static/css/2.69121389.chunk.css.map",
+    "static/css/main.690644ae.chunk.css.map": "/audio-wizard/static/css/main.690644ae.chunk.css.map",
+    "static/js/2.fac7a56f.chunk.js.LICENSE.txt": "/audio-wizard/static/js/2.fac7a56f.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ca7304cf.js",
+    "static/css/2.69121389.chunk.css",
+    "static/js/2.fac7a56f.chunk.js",
+    "static/css/main.690644ae.chunk.css",
+    "static/js/main.2eb8c118.chunk.js"
+  ]
+}
