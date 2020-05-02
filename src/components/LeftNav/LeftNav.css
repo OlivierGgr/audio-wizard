@@ -1,5 +1,5 @@
 .sidebar {
-  position: fixed;
+  position: fixed !important;
   bottom: 0;
   left: 0;
   width: 12vw;
@@ -10,7 +10,15 @@
   background-color: #EFF2F7;
 }
 
-.sidebarTop {
+.sidebar .navbar-nav {
+  height: 100%;
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+}
+
+.sidebar .navbar-nav .sidebarTop {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -24,7 +32,7 @@
           flex-direction: column;
 }
 
-.sidebarBottom {
+.sidebar .navbar-nav .sidebarBottom {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -36,5 +44,18 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media only screen and (max-width: 992px) {
+  .sidebar {
+    width: 12vw;
+  }
+  .toggled {
+    width: 20vw;
+  }
+  .navbar-collapse {
+    -ms-flex-preferred-size: 0 !important;
+        flex-basis: 0 !important;
+  }
 }
 /*# sourceMappingURL=LeftNav.css.map */

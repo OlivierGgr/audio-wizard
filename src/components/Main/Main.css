@@ -10,24 +10,47 @@
           align-items: center;
 }
 
-.container {
+.main .container {
   height: 80%;
 }
 
-.container .card {
+.main .container .card {
   height: 80%;
   max-width: 80%;
   margin: 0 auto;
 }
 
-.container .card .card-header {
+.main .container .card .card-header {
   background-color: white;
   color: #18BC9C;
   font-weight: 500;
   font-size: 1.4rem;
 }
 
-.container .card .card-body {
+.main .container .card .card-header .formReturnBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .container .card .card-header .formReturnBtn h3 {
+  margin: 0;
+}
+
+.main .container .card .card-header .formReturnBtn button {
+  background: none;
+  border: none;
+  position: absolute;
+  left: 2%;
+}
+
+.main .container .card .card-body {
   height: 50%;
   position: relative;
   margin: 0 auto;
@@ -47,7 +70,7 @@
           justify-content: space-evenly;
 }
 
-.container .card .card-body .formAnswer {
+.main .container .card .card-body .formAnswer {
   /* TESTS */
   position: relative;
   margin: 0 auto;
@@ -61,7 +84,7 @@
   /* FIN TESTS */
 }
 
-.container .card .card-body .formAnswer .text {
+.main .container .card .card-body .formAnswer .text {
   width: 40%;
   border: 0;
   border-bottom: 2px solid #18BC9C;
@@ -73,7 +96,7 @@
   transition: border-color 0.2s;
 }
 
-.container .card .card-body .formAnswer .text:focus {
+.main .container .card .card-body .formAnswer .text:focus {
   padding-bottom: 6px;
   border-width: 3px;
   -o-border-image: linear-gradient(to right, #18BC9D, #18ABBB);
@@ -82,7 +105,7 @@
   border-image-slice: 1;
 }
 
-.container .card .card-body .formAnswer .button {
+.main .container .card .card-body .formAnswer .button {
   background-color: #D1F2EB;
   border: 1px solid #F6F6F9;
   border-radius: 500px;
@@ -92,13 +115,17 @@
   font-weight: 600;
 }
 
-.container .card .card-body .formAnswer .button:focus {
+.main .container .card .card-body .formAnswer .button:focus {
   background-color: #18BC9C;
   border: 1px solid #F6F6F9;
   color: #D1F2EB;
 }
 
-.container .card .card-body button {
+.main .container .card .card-body .formAnswer h2 {
+  color: #18BC9C;
+}
+
+.main .container .card .card-body button {
   background-color: #18BC9C;
   border: 1px solid #199AA6;
   border-radius: 500px;
@@ -106,7 +133,22 @@
   height: 72px;
 }
 
-.container .card .card-body button:hover {
+.main .container .card .card-body button:hover {
   background-color: #128f76;
+}
+
+@media only screen and (max-width: 992px) {
+  .main {
+    margin-left: 10vw;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  h3 {
+    font-size: 1.5rem !important;
+  }
+  button svg {
+    height: 1.2em !important;
+  }
 }
 /*# sourceMappingURL=Main.css.map */

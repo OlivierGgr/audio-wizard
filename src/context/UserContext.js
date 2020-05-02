@@ -1,5 +1,5 @@
 import React, { createContext, useReducer } from 'react'
-import UserReducer from './UserReducer'
+import UserReducer from '../reducer/UserReducer'
 
 const initialState = { name: "", surname:"", gender:"" }
 const UserContext = createContext(initialState)

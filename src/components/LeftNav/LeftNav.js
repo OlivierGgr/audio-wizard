@@ -1,36 +1,31 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Nav from 'react-bootstrap/Nav'
-import DynamicLinks from './DynamicLinks'
+import Navbar from 'react-bootstrap/Navbar'
+import DynamicLinksFactory from './DynamicLinks'
+import staticLinks from '../../data/staticLinks'
 import './LeftNav.css'
 
-// Ici je pars du principe que le composant qui contient les deux links en bas de page
-// ne change jamais dans l'app: il s'agit toujours des mêmes liens, affichés dans le même ordre
-const links = [{
-    text: "1ère visite",
-    route: "/home"
-    },
-    {
-    text: "Statistiques",
-    route: "/home"
-    }
-]
-
-const staticLinks = () => {
-    return links.map(link => <Nav.Link href={link.route}>{link.text}</Nav.Link>
+const staticLinksFactory = () => {
+    return staticLinks.map(link => <Nav.Link href={link.route}>{link.text}</Nav.Link>
     )
 }
 
 export default function LeftNav() {
+    const [toggle, setToggle] = useState(false)
     return(
-        <div className="leftNavMain">
-            <Nav defaultActiveKey="/home" className="flex-column sidebar">
-                <div className="sidebarTop">
-                    {DynamicLinks()}
-                </div>
-                <div className="sidebarBottom">
-                    {staticLinks()}
-                </div>
-            </Nav>
-        </div>
+        <Navbar bg="light" expand="lg" className={`flex-column sidebar ${toggle ? "toggled" : false}`}>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={() => setToggle(!toggle)}/>
+            <Navbar.Collapse id="basic-navbar-nav">
+                <Nav className="mr-auto">
+                    <div className="sidebarTop">
+                        {DynamicLinksFactory()}
+                    </div>
+                    <div className="sidebarBottom">
+                        {staticLinksFactory()}
+                    </div>
+                </Nav>
+                
+            </Navbar.Collapse>
+        </Navbar>
     )
 }

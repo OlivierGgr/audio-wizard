@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import Navbar from 'react-bootstrap/Navbar'
 import { GiHealthNormal } from 'react-icons/gi'
 import { FaUserCircle } from 'react-icons/fa'
-import UserContext from '../../UserContext'
+import UserContext from '../../context/UserContext'
 
 import './TopNav.css'
 
